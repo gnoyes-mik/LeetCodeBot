@@ -1,0 +1,12 @@
+problem-manager:
+  rate: # 난이도 별 문제 수
+    easy: 1
+    medium: 2
+    hard: 1
+
+slack:
+  workspace:
+    decode:
+      leetcode:
+        key: # {slack 채널 WebHook Url}
+        cron : # {slack 채널에 게시될 스케줄}     # ex) 0 0 10 * * 2  #매주 월요일 10시 마다
