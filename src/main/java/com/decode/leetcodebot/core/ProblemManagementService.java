@@ -86,12 +86,10 @@ public class ProblemManagementService {
     private String toText(List<Problem> problems) {
         String baseUrl = "https://leetcode.com/problems/";
         StringBuilder sb = new StringBuilder();
-        sb.append("[테스트입니다]").append("\n");
         for (Problem problem : problems) {
             String line = String.format("[%s] %s (%s)", problem.getDifficulty(), problem.getTitle(), baseUrl + problem.getPathKey());
             sb.append(" - ").append(line).append("\n");
         }
-        sb.append("!! 테스트중이므로 10초 마다 알고리즘이 추천됩니다 !!");
         return sb.toString();
     }
 
